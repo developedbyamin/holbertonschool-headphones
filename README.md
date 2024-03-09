@@ -34,4 +34,4 @@ To get started with this project, follow these steps:
    ![Tablet](images/tablet.png)
 
 3. **Mobile View**
-   ![Mobile](images/mobile.png)
+   ![Mobile](images/phone.png)
