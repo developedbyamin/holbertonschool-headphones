@@ -2,15 +2,6 @@
 
 Welcome to the Responsive Design Implementation repository! This project focuses on building a responsive web design from scratch, ensuring a seamless user experience across various devices and screen sizes. Whether you're a developer looking to enhance your responsive design skills or a designer seeking a foundation for a mobile-friendly website, this repository provides a solid starting point.
 
-## Table of Contents
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Responsive Design](#responsive-design)
-- [Contributing](#contributing)
-- [License](#license)
-- [Screenshots](#screenshots)
-
 ## Features
 - **From Scratch**: Built entirely from the ground up, providing a clear understanding of the design structure.
 - **Responsive Layouts**: Ensures an optimal viewing and interaction experience on various devices and screen sizes.
@@ -22,7 +13,7 @@ To get started with this project, follow these steps:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/responsive-design-implementation.git
+   git clone https://github.com/developedbyamin/holbertonschool-headphones.git
     ```
 
 ## Screenshots
