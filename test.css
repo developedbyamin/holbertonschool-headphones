@@ -1,0 +1,222 @@
+html{
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+body{
+    margin: 0;
+}
+
+:root{
+    --text-color: white;
+    --color-white: #f2f2f2;
+    --color-black: #071629;
+
+    --color-hover-active: #FF6565;
+    --btn-opacity-active: 0.9;
+
+    --font-family-I: "Source Sans Pro", sans-serif;
+    --font-family-II: "spain Cycle OT", sans-serif;
+
+    --header-background-color: #071629;
+    --hamburger-line-height: 2px;
+
+    --link-hover-active-color: #FF6565;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+    width: 100%;
+}
+
+body{
+    color: var(--text-color);
+    font-family: var(--font-family-I);
+}
+
+.button{
+    color: var(--text-color);
+    background-color: var(--color-hover-active);
+    outline: none;
+    border: 0px;
+    border-radius: 22px;
+    display: block;
+    font-weight: bold;
+    width: 162px;
+    height: 44px;
+}
+
+.button:hover,
+.button:active{
+    opacity: var(--btn-opacity-active);
+}
+
+a:hover, a:active{
+    color: var(--link-hover-active-color);
+}
+
+.container{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ============ Header ============ */
+
+.header{
+    background-image: url(./images/headphones_hero_1.jpg);
+    width: 1440px;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.header-logo{
+    flex: 1;
+}
+
+.img-logo {
+    display: block;
+    width: 160.96px; /* Default width for larger screens */
+    height: 31.18px;
+}
+
+@media (max-width: 768px) {
+    .header-logo{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* ============ Navbar ============ */
+@media (max-width: 767px) {
+    .nav {
+        position: absolute;
+        top: 80px;
+        background: transparent;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        height: 0;
+        transition: 0.5s;
+        overflow: hidden;
+
+    }
+    .nav .nav-item{
+        margin-top: 20px;
+        
+    }
+    label{
+        width: 30px;
+        height: 20px;
+        position: relative
+    }
+    label div{
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        position: absolute;
+        transform: translateY(-50%);
+        border-radius: 99px;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+    label div:nth-child(1){
+        top: 0;
+    }
+    label div:nth-child(2){
+        top: 50%;
+        width: 80%;
+    }
+    label div:nth-child(3){
+        top: 100%;
+    }
+    input:checked + header nav{
+        height: 100vh;
+    }
+    input:checked + header label div:nth-child(1){
+        transform: rotate(45deg);
+        top: 50%;
+    }
+    input:checked + header label div:nth-child(2){
+        transform: rotate(-45deg);
+        top: 50%;
+    }
+    input:checked + header label div:nth-child(3){
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+.nav{
+    list-style: none;
+    display: flex;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: bold;
+    font-style: normal;
+    
+}
+
+.nav-item{
+    margin: 0 20px 0 20px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.nav-link:hover{
+    color: var(--color-hover-active);
+}
+
+/* ============ Hero Section ============ */
+
+.hero{
+    padding-top: 300px;
+    max-width: 647px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hero h1{
+    font-size: 2rem;
+    margin: 0;
+}
+
+.header span{
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+.header p{
+    font-size: 1rem;
+    line-height: 28px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.hero .button{
+    margin: 40px auto 60px;
+    filter: drop-shadow(0px 2px 20px rgba(0,0,0,0.5));
+}
+
+/* ============ Menu Btn ============ */
+.menu-btn{
+    display: none;
+}
